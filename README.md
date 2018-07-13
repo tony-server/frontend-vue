@@ -1,6 +1,7 @@
 # frontend-vue
 
-cnpm install
+npm install
 
 npm run serve
+
 npm run build
