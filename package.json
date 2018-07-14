@@ -1,22 +1,24 @@
 {
-  "name": "frontend-vue",
+  "name": "parcel-vue",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "description": "零配置VUE开发模板，基于Parcel全新构建",
+  "author": "cheneyweb <457299596@qq.com>",
+  "main": "main.js",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url / --no-source-maps"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lyman-server/frontend-vue.git"
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue-hot-reload-api": "^2.3.0",
+    "vue-router": "^3.0.1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lyman-server/frontend-vue/issues"
-  },
-  "homepage": "https://github.com/lyman-server/frontend-vue#readme"
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.0.0",
+    "iview": "^2.14.3",
+    "parcel-bundler": "^1.9.3",
+    "vue": "^2.5.16",
+    "vue-template-compiler": "^2.5.16"
+  }
 }
