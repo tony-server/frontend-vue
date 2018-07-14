@@ -1,8 +1,8 @@
 {
   "name": "parcel-vue",
   "version": "1.0.0",
-  "description": "零配置VUE开发模板，基于Parcel全新构建",
-  "author": "cheneyweb <457299596@qq.com>",
+  "description": "base Parcel build",
+  "author": "lyman <23335096@qq.com>",
   "main": "main.js",
   "license": "MIT",
   "scripts": {
