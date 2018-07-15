@@ -47,7 +47,7 @@
             </Col>
             <Col span="5">
             <Card>
-                <div style="text-align:center" @click="showClick">
+                <div style="text-align:center">
                     <!-- <img src="../../images/logo.png"> -->
                     <!-- <router-link to="/layout/devcomponents"> -->
                         <Icon type="play" size="100"></Icon>
@@ -94,11 +94,6 @@ export default {
     return {
       showTip: false
     };
-  },
-  methods: {
-    showClick() {
-      this.showTip = true;
-    }
   }
 };
 </script>
