@@ -37,13 +37,17 @@ const demo = {
 const dashboard = {
     path: '/dashboard',
     component: Layout,
-    redirect: '/dashboard',
+    //redirect: '/dashboard',
     name: 'Dashboard',
     //hidden: true,
-    children: [{
-        path: 'index',
-        component: () => import('../views/dashboard/index')
-    }]
+    children: [
+      {
+        path: 'index', title: '仪表盘', component: () => import('../views/dashboard/index')
+      },
+      {
+        path: 'dashboard', title: '仪表盘', component: () => import('../views/dashboard/index')
+      },
+    ]
 };
 
 const routers = [
