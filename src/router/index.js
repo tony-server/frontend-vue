@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-//import routers from './router';
+/* Layout */
+import Layout from '../views/layout/Layout'
 
 // 全加载
 // import Index from '../components/Index'
@@ -33,6 +34,18 @@ const demo = {
     component: () => import('../views/main/components/HeaderBar')
 };
 
+const dashboard = {
+    path: '/dashboard',
+    component: Layout,
+    redirect: '/dashboard',
+    name: 'Dashboard',
+    //hidden: true,
+    children: [{
+        path: 'index',
+        component: () => import('../views/dashboard/index')
+    }]
+};
+
 const routers = [
   {
     path: '/',
@@ -40,8 +53,8 @@ const routers = [
   },
   demo,
   page404,
-  page500
-
+  page500,
+  dashboard
 ]
 // 路由配置
 const RouterConfig = {
